@@ -1,0 +1,10 @@
+{
+  "development": {
+    "username": "root",
+    "password": "TIN123",
+    "database": "my_game",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "port": 3306
+  }
+}

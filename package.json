@@ -1,0 +1,21 @@
+{
+  "name": "my_game",
+  "version": "1.0.0",
+  "description": "My Game",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "TinNH6",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "lodash.pick": "^4.4.0",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.19",
+    "sequelize": "^6.21.3",
+    "socket.io": "^4.5.1"
+  }
+}
