@@ -97,12 +97,10 @@ io.on("connection", (socket) => {
           const infoUserEndPlay = await infoPlayerEndPlayService(code);
           if (checkUserEndPlay >= 2) {
             if (infoUserEndPlay) {
-              io.sockets
-                .to(`${infoUserEndPlay.room_code}`)
-                .emit("user_played", {
-                  player_id: infoUserEndPlay.player_id,
-                  score: infoUserEndPlay["scores.scores"],
-                });
+              io.sockets.to(infoUserEndPlay.room_code).emit("user_played", {
+                player_id: infoUserEndPlay.player_id,
+                score: infoUserEndPlay["scores.scores"],
+              });
             }
           }
         }
